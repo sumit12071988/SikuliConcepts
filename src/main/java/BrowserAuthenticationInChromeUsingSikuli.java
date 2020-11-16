@@ -2,8 +2,6 @@
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.script.ImagePath;
-import org.sikuli.script.Location;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
@@ -24,7 +22,9 @@ public class BrowserAuthenticationInChromeUsingSikuli {
 		//*********** DRIVER ACTIONS ************
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();		
-		driver.get("https://the-internet.herokuapp.com/basic_auth");		
+		driver.get("https://the-internet.herokuapp.com/basic_auth");
+		
+		
 
 		
 		// *********** SIKULI ACTIONS *************
@@ -41,9 +41,7 @@ public class BrowserAuthenticationInChromeUsingSikuli {
 	
 		s.wait(btn_AuthPopUp_SignIn,2).click();
 		
-		
-		
-		Thread.sleep(5000);		
+	
 		driver.close();
 		
 	}

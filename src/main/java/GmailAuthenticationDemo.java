@@ -19,7 +19,9 @@ public class GmailAuthenticationDemo {
 		Pattern link_SignIn = new Pattern(System.getProperty("user.dir")+"\\SikuliImageLibrary\\link_SignIn.PNG");
 		Pattern txt_Username = new Pattern(System.getProperty("user.dir")+"\\SikuliImageLibrary\\txt_Username.PNG");
 		Pattern btn_Next = new Pattern(System.getProperty("user.dir")+"\\SikuliImageLibrary\\btn_Next.PNG");
-		Pattern txt_Password = new Pattern(System.getProperty("user.dir")+"\\SikuliImageLibrary\\txt_Password.PNG");		
+		Pattern txt_Password = new Pattern(System.getProperty("user.dir")+"\\SikuliImageLibrary\\newPassword.PNG");	
+		
+		
 		
 		
 		
@@ -37,12 +39,14 @@ public class GmailAuthenticationDemo {
 		
 		Screen s = new Screen();
 		
-		s.wait(link_Gmail,2).click();
-		s.wait(link_SignIn,2).click();
-		s.wait(txt_Username,2).type("deals4sumit@gmail.com");
-		s.wait(btn_Next,2).click();
-		s.type(txt_Password, "#Adm4n2020");
-		s.wait(btn_Next,2).click();
+		s.wait(link_Gmail,8).click();
+		s.wait(link_SignIn,8).click();
+		s.wait(txt_Username,8).type("deals4sumit@gmail.com");
+		s.wait(btn_Next,8).click();
+		s.type(txt_Password,"#Adm4n2020");
+		s.wait(btn_Next,8).click();
+		
+		Thread.sleep(8000);
 		
 		driver.quit();
 	}
