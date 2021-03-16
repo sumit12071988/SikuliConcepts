@@ -1,5 +1,6 @@
-package actions;
+package b_Actions;
 
+import org.apache.log4j.or.ObjectRenderer;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Key;
 import org.sikuli.script.Pattern;
@@ -23,7 +24,9 @@ public class DragAndDrop {
 
 		// Solution #2:
 		s.dragDrop(new Pattern(System.getProperty("user.dir") + "\\SikuliImageLibrary\\DragNDrop\\uTorrent.png"),new Pattern(System.getProperty("user.dir") + "\\SikuliImageLibrary\\DragNDrop\\sonarqube.png"));
-
+		// OR
+		s.dragDrop(System.getProperty("user.dir") + "\\SikuliImageLibrary\\DragNDrop\\uTorrent.png",System.getProperty("user.dir") + "\\SikuliImageLibrary\\DragNDrop\\sonarqube.png");
+		
 		Thread.sleep(8000);
 
 	}

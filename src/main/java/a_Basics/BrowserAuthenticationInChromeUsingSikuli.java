@@ -1,7 +1,10 @@
+package a_Basics;
+
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
@@ -21,15 +24,14 @@ public class BrowserAuthenticationInChromeUsingSikuli {
 			
 		//*********** DRIVER ACTIONS ************
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();		
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/basic_auth");
-		
 		
 
 		
 		// *********** SIKULI ACTIONS *************
 		// Create an object of Screen class
-		//	Note: Don't use wait in ALL type actions if multiple textboxes are present in same window. Use the action directly.
+		//	Note: Don't use wait in ALL type b_Actions if multiple textboxes are present in same window. Use the action directly.
 		Screen s = new Screen();
 		
 		// Step4: Use Sikuli scripts

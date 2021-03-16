@@ -1,3 +1,5 @@
+package a_Basics;
+
 
 
 import org.openqa.selenium.WebDriver;
@@ -35,7 +37,7 @@ public class GmailAuthenticationDemo {
 		
 		// *********** SIKULI ACTIONS *************
 		// Create an object of Screen class
-		//	Note: Don't use wait in ALL type actions if multiple textboxes are present in same window. Use the action directly.
+		//	Note: Don't use wait in ALL type b_Actions if multiple textboxes are present in same window. Use the action directly.
 		
 		Screen s = new Screen();
 		
@@ -43,6 +45,7 @@ public class GmailAuthenticationDemo {
 		s.wait(link_SignIn,8).click();
 		s.wait(txt_Username,8).type("deals4sumit@gmail.com");
 		s.wait(btn_Next,8).click();
+		s.wait(txt_Password,10);
 		s.type(txt_Password,"#Adm4n2020");
 		s.wait(btn_Next,8).click();
 		

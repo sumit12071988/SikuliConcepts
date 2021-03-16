@@ -1,3 +1,13 @@
+package a_Basics;
+
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 import org.sikuli.script.Key;
 import org.sikuli.script.Pattern;
@@ -72,7 +82,6 @@ public class ConvertingPyScriptToJava {
 		s.click(wordWrapBtn.similar(0.50).targetOffset(-13,-12));
 		s.click(closeBtn.targetOffset(37,0));
 		s.click(dontSaveBtn.targetOffset(0,1));
-		
 		
 
 // ******************************************************************************************************

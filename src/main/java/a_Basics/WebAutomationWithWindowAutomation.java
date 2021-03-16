@@ -1,3 +1,5 @@
+package a_Basics;
+
 
 
 import org.openqa.selenium.WebDriver;
@@ -45,7 +47,7 @@ public class WebAutomationWithWindowAutomation {
 		
 		// *********** SIKULI ACTIONS *************
 		// Create an object of Screen class
-		//	Note: Don't use wait in ALL type actions if multiple textboxes are present in same window. Use the action directly.
+		//	Note: Don't use wait in ALL type b_Actions if multiple textboxes are present in same window. Use the action directly.
 		
 		Screen s = new Screen();
 		

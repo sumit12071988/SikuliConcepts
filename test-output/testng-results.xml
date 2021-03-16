@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-16T23:43:58 MYT" name="Default suite" finished-at="2020-11-16T23:44:18 MYT" duration-ms="19991">
+  <suite name="Default suite" duration-ms="15590" started-at="2021-01-14T15:25:53 SGT" finished-at="2021-01-14T15:26:08 SGT">
     <groups>
     </groups>
-    <test started-at="2020-11-16T23:43:58 MYT" name="Default test" finished-at="2020-11-16T23:44:18 MYT" duration-ms="19991">
-      <class name="YoutubeVideoTest">
-        <test-method signature="test()[pri:0, instance:YoutubeVideoTest@2f7c2f4f]" started-at="2020-11-16T23:43:58 MYT" name="test" finished-at="2020-11-16T23:44:18 MYT" duration-ms="19965" status="PASS">
+    <test name="Default test" duration-ms="15590" started-at="2021-01-14T15:25:53 SGT" finished-at="2021-01-14T15:26:08 SGT">
+      <class name="a_Basics.FileUploadDemo">
+        <test-method status="PASS" signature="test()[pri:0, instance:a_Basics.FileUploadDemo@1563da5]" name="test" duration-ms="15551" started-at="2021-01-14T15:25:53 SGT" finished-at="2021-01-14T15:26:08 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- YoutubeVideoTest -->
+      </class> <!-- a_Basics.FileUploadDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
