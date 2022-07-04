@@ -17,6 +17,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<testng.version>7.6.0</testng.version>
+		<webdrivermanager.version>5.2.0</webdrivermanager.version>
+		<selenium-java.version>4.2.1</selenium-java.version>
+
+
 	</properties>
 
 	<build>
@@ -78,21 +83,21 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>${selenium-java.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.1.0</version>
+			<version>${webdrivermanager.version}</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.3.0</version>
+			<version>${testng.version}</version>
 		</dependency>
 
 
